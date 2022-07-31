@@ -1,96 +1,96 @@
 * {
   margin: 0;
   padding: 0;
-  color: white;
-  font-family: Georgia, Arial;
+}
+
+html {
+  box-sizing: border-box;
 }
 
 body {
-  background-image: linear-gradient(115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbUu2_anhnSQHEo5zAa03UrEsvxzca7OnAA&usqp=CAU.jpeg);
-  padding-bottom: 25px;
-  min-width: 375px;
+  color: #6b6565;
+  font-size: 18px;
+  overflow-x: hidden;
 }
 
-h1 {
+#navbar {
+  position: fixed;
+  width: 24%;
+  height: 100%;
+  border-right: 3px solid #a8a6a6;
+  z-index: 1;
+}
+
+.docs-title {
+  padding: 15px 0 25px 15px;
+  font-size: 150%;
   text-align: center;
+}
+
+.divider {
+  overflow-y: scroll;
+}
+
+h3 {
+  font-weight: normal;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+h3 a {
+  font-style: normal;
+  color: #4d4353;
+  text-decoration: none;
+}
+
+header h1 {
+  padding: 10px;
+  font-family: 'Noto Sans', sans-serif;
+  color: rgb(10, 10, 10);
+}
+
+.main-section {
+  max-width: 75%;
+  position: relative;
+  top: 10px;
+  left: 330px;
+}
+
+.main-section p {
+  padding-left: 20px;
 }
 
 p {
-  text-align: center;
-  font-size: large;
-  font-style: italic;
-  padding-top: 10px;
+  padding: 10px;
+  max-width: 92%;
 }
 
-header {
-  margin: 1.5em 0;
+ul li {
+  max-width: 85%;
+  padding-bottom: 7px;
+  position: relative;
+  left: 70px;
 }
 
-form {
-  width: 50%;
-  margin: 0 auto;
-  background-color: rgb(41, 54, 73);
-  font-size: 21px;
-  padding: 20px 30px;
+ul li li {
+  padding-left: 20px;
 }
 
-#name, #email, #number, #dropdown {
-  margin-top: 10px;
-  margin-bottom: 25px;
-  display: block;
-  width: 100%;
-  height: 40px;
-  color: black;
+code, code pre {
+  padding: 5px 10px;
+  background-color: #eee;
+  font-size: 15px;
+  border-radius: 3px;
+  position: relative;
+  left: 50px;
+  width: fit-content;
 }
 
-label {
-  display: block;
-  margin: 15px 0;
+footer {
+  position: calc(height-20px);
 }
 
-textarea {
-  display: block;
-  width: 100%;
-  margin-top: 10px;
-}
-
-fieldset {
-  border: hidden;
-}
-
-input[type="checkbox"], input[type="radio"] {
-  margin-right: 15px;
-  display: inline;
-}
-
-::placeholder {
-  color: grey;
-}
-
-#dropdown, textarea, option {
-  background-color: white;
-  color: black;
-}
-
-#textarea {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-input[type="submit"] {
-  display: block;
-  background-color: rgb(47, 171, 47);
-  text-align: center;
-  margin: 20px auto 10px auto;
-  width: 100%;
-  height: 40px;
-  border: solid;
-  border-radius: 17px;
-}
-
-.optional-low {
-  font-size: 17px;
-  margin-left: 5px;
-  display: inline;
-  font-style: italic;
+/* On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user */
+@media (min-width: 1080px) {
+  /**/
 }
